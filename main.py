@@ -41,32 +41,14 @@ async def start(client, message):
     self = await bot.get_me()
     busername = self.username
     if message.chat.type != "private":
-        buttons = [
-                  [
-                   InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/XCodeBots"),
-                   InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/XCodeSupport"),
-                  ]       
-                  ]
+        
         await message.reply("ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴇʀsᴏɴᴀʟ",
                             reply_markup=buttons)
         
     else:
-        buttons = [[
-            InlineKeyboardButton("❮ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❯", url=f"https://t.me/MissHoneyRobot?startgroup=true")
-        ]
-        ]
-        video = "https://te.legra.ph/file/0239a463550472e4b0c70.mp4"
-        await message.reply_video(video, caption=f"""ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}),
-ɪ ᴀᴍ ᴄʜᴀᴛʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
-
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴏᴡɴᴇʀ   [⏤͟͞•𝙉𝙄𝙏𝙍𝙄𝘾"___𓆩᪵🤍💸𓆪̥](https://t.me/Xd_Nitric)
-┣★ ᴜᴘᴅᴀᴛᴇs [ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ](https://t.me/XCodeBots)
-┣★ sᴜᴘᴘᴏʀᴛ [ᴏғғɪᴄɪᴀʟ ɢʀᴏᴜᴘ](https://t.me/XCodeSupport)
-┣★ sᴏᴜʀᴄᴇ  [ɢᴇᴛ ʀᴇᴘᴏ ʜᴇʀᴇ](https://pornhub.com)
-┗━━━━━━━━━━━━━━━━━┛
-""", reply_markup=InlineKeyboardMarkup(buttons))
-
+        
+        video = "https://telegra.ph/file/ddd530989393be66d71e1.jpg"
+        
 
 
 
