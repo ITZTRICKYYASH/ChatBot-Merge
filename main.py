@@ -36,7 +36,7 @@ async def is_admins(chat_id: int):
 
 
 
-@bot.on_message(filters.command("pstart"))
+@bot.on_message(filters.command("start"))
 async def start(client, message):
     self = await bot.get_me()
     busername = self.username
